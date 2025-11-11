@@ -19,7 +19,7 @@ namespace MyRecipeBook.Exceptions {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class ResourceMessagesException {
@@ -99,9 +99,9 @@ namespace MyRecipeBook.Exceptions {
         /// <summary>
         ///   Looks up a localized string similar to The password must be longer than 5 characters..
         /// </summary>
-        public static string PASSWORD_EMPTY {
+        public static string PASSWORD_INVALID {
             get {
-                return ResourceManager.GetString("PASSWORD_EMPTY", resourceCulture);
+                return ResourceManager.GetString("PASSWORD_INVALID", resourceCulture);
             }
         }
         
