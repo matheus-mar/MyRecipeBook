@@ -10,7 +10,8 @@ namespace MyRecipeBook.Infrastructure.Migrations.Versions
             CreateTable("Users")
                 .WithColumn("Name").AsString(255).NotNullable()
                 .WithColumn("Email").AsString(255).NotNullable()
-                .WithColumn("Password").AsString(2000).NotNullable();
+                .WithColumn("Password").AsString(2000).NotNullable()
+                .WithColumn("UserIdentifier").AsGuid().NotNullable();
         }
     }
 }
