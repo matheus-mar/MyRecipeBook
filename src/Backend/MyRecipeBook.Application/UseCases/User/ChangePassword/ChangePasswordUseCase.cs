@@ -14,14 +14,14 @@ namespace MyRecipeBook.Application.UseCases.User.ChangePassword
     {
         private readonly ILoggedUser _loggedUser;
         private readonly IUserUpdateOnlyRepository _repository;
-        private readonly IUnityOfWork _unityOfWork;
+        private readonly IUnitOfWork _unityOfWork;
         private readonly IPasswordEncrypter _passwordEncrypter;
 
         public ChangePasswordUseCase(
             ILoggedUser loggedUser,
             IPasswordEncrypter passwordEncrypter,
             IUserUpdateOnlyRepository repository,
-            IUnityOfWork unityOfWork)
+            IUnitOfWork unityOfWork)
         {
             _loggedUser = loggedUser;
             _repository = repository;

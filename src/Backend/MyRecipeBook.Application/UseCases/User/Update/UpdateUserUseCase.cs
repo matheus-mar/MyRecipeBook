@@ -13,13 +13,13 @@ namespace MyRecipeBook.Application.UseCases.User.Update
         private readonly ILoggedUser _loggedUser;
         private readonly IUserUpdateOnlyRepository _repository;
         private readonly IUserReadOnlyRepository _userReadOnlyRepository;
-        private readonly IUnityOfWork _unityOfWork;
+        private readonly IUnitOfWork _unityOfWork;
 
         public UpdateUserUseCase(
             ILoggedUser loggedUser,
             IUserUpdateOnlyRepository repository,
             IUserReadOnlyRepository userReadOnlyRepository,
-            IUnityOfWork unityOfWork)
+            IUnitOfWork unityOfWork)
         {
             _loggedUser = loggedUser;
             _repository = repository;

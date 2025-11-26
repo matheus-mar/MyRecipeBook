@@ -5,9 +5,9 @@ namespace CommonTestUtilities.Repositories
 {
     public class UnitOfWorkBuilder
     {
-        public static IUnityOfWork Build()
+        public static IUnitOfWork Build()
         {
-            var mock = new Mock<IUnityOfWork>();
+            var mock = new Mock<IUnitOfWork>();
 
             return mock.Object;
         }

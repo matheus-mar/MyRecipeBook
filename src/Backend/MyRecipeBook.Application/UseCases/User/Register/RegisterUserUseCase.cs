@@ -15,7 +15,7 @@ namespace MyRecipeBook.Application.UseCases.User.Register
     {
         private readonly IUserWriteOnlyRepository _writeOnlyRepository;
         private readonly IUserReadOnlyRepository _readOnlyRepository;
-        private readonly IUnityOfWork _unityOfWork;
+        private readonly IUnitOfWork _unityOfWork;
         private readonly IPasswordEncrypter _passwordEncrypter;
         private readonly IAccessTokenGenerator _accessTokenGenerator;
         private readonly IMapper _mapper;
@@ -23,7 +23,7 @@ namespace MyRecipeBook.Application.UseCases.User.Register
         public RegisterUserUseCase(
             IUserWriteOnlyRepository writeOnlyRepository,
             IUserReadOnlyRepository readOnlyRepository,
-            IUnityOfWork unityOfWork,
+            IUnitOfWork unityOfWork,
             IPasswordEncrypter passwordEncrypter,
             IAccessTokenGenerator accessTokenGenerator,
             IMapper mapper)

@@ -1,4 +1,4 @@
-﻿namespace MyRecipeBook.Domain
+﻿namespace MyRecipeBook.Domain.Entities
 {
     public class EntityBase
     {
