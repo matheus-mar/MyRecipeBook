@@ -42,7 +42,7 @@ namespace MyRecipeBook.Application.UseCases.Recipe.Register
 
             for (var index = 0; index < instructions.Count; index++)
             {
-                instructions.ElementAt(index).Step = index + 1;
+                instructions[index].Step = index + 1;
             }
 
             recipe.Instructions = _mapper.Map<IList<Domain.Entities.Instruction>>(instructions);
